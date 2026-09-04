@@ -1,209 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Join the free Trader Gupta learning community for educational market concepts and chart-reading discussions.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trader Gupta - Learning Community</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
 
   <style>
-    * { box-sizing: border-box; }
-
-    html, body {
-      margin: 0;
-      min-height: 100%;
-    }
-
     body {
+      margin: 0;
+      padding: 0;
       font-family: "Poppins", sans-serif;
-      background:
-        radial-gradient(circle at 50% 0%, rgba(0, 210, 255, 0.10), transparent 35%),
-        #000;
-      color: #fff;
+      background-color: #000;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 24px 14px;
+      min-height: 100vh;
     }
 
     .card {
-      width: 100%;
-      max-width: 360px;
-      background: linear-gradient(180deg, #061118 0%, #01080c 100%);
+      width: 85%;
+      max-width: 340px;
+      background: #010a0f;
       border: 1.5px solid #00d2ff;
-      border-radius: 32px;
-      padding: 22px 16px 18px;
+      border-radius: 35px;
+      padding: 20px 15px;
       text-align: center;
-      box-shadow: 0 0 28px rgba(0, 210, 255, 0.16);
+      box-shadow: 0 0 25px rgba(0, 210, 255, 0.15);
     }
 
     .profile-img {
-      width: 112px;
-      height: 112px;
-      display: block;
-      margin: 0 auto;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
       border: 3px solid #00d2ff;
       object-fit: cover;
-      box-shadow: 0 0 18px rgba(0, 210, 255, 0.65);
+      margin-top: -5px;
+      box-shadow: 0 0 15px #00d2ff;
     }
 
     h1 {
       color: #fff;
-      font-size: 21px;
-      line-height: 1.25;
-      margin: 15px 0 17px;
+      font-size: 20px;
+      margin: 15px 0;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
 
     .features {
-      width: 92%;
-      margin: 0 auto;
       text-align: left;
+      margin: 0 auto;
+      width: 90%;
     }
 
     .feature-item {
-      color: #d4d9dc;
+      color: #ccc;
       font-size: 13px;
-      line-height: 1.4;
-      padding: 10px 2px;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       display: flex;
       align-items: center;
     }
 
     .feature-item:last-child {
-      border-bottom: 0;
+      border-bottom: none;
     }
 
     .icon {
-      width: 28px;
-      flex: 0 0 28px;
-      margin-right: 9px;
+      margin-right: 12px;
       font-size: 16px;
-      text-align: center;
     }
 
     .join-text {
       color: #eee;
       font-size: 12px;
-      line-height: 1.5;
-      margin: 18px 8px 12px;
+      margin: 20px 0 12px;
       font-weight: 300;
     }
 
     .telegram-btn {
       display: block;
-      width: 100%;
       background: linear-gradient(90deg, #00d2ff 0%, #9247ff 100%);
-      color: #fff;
+      color: white;
       text-decoration: none;
-      padding: 14px 12px;
+      padding: 14px;
       border-radius: 50px;
-      font-weight: 700;
-      font-size: 15px;
-      letter-spacing: .2px;
-      margin-bottom: 17px;
-      box-shadow: 0 5px 16px rgba(0, 210, 255, 0.28);
-      transition: transform .15s ease, opacity .15s ease;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 12px rgba(0, 210, 255, 0.3);
+      cursor: pointer;
+      border: 0;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .telegram-btn:active {
-      transform: scale(.98);
-      opacity: .9;
+      transform: scale(0.98);
     }
 
     .hindi-quote {
       color: #bbb;
-      font-size: 12.5px;
-      margin: 0 5px 18px;
-      line-height: 1.5;
+      font-size: 13px;
+      margin-bottom: 20px;
+      line-height: 1.4;
     }
 
     .footer-box {
-      border: 1px solid rgba(0, 210, 255, 0.22);
+      border: 1px solid rgba(0, 210, 255, 0.2);
       border-radius: 12px;
-      padding: 9px 8px;
-      font-size: 10.5px;
-      line-height: 1.5;
+      padding: 8px;
+      font-size: 11px;
       color: #888;
     }
 
     .footer-box a {
       color: #00d2ff;
-      font-weight: 700;
+      font-weight: bold;
       text-decoration: none;
     }
 
     .disclaimer {
       font-size: 9px;
-      line-height: 1.45;
-      color: #555;
-      margin-top: 11px;
+      color: #666;
+      margin-top: 12px;
+      line-height: 1.5;
     }
 
-    @media (max-width: 360px) {
-      body { padding: 14px 10px; }
-      .card { border-radius: 27px; padding: 19px 13px 16px; }
-      .profile-img { width: 100px; height: 100px; }
-      h1 { font-size: 19px; }
+    /* Intent confirmation */
+    .confirm-box {
+      display: none;
+      margin: 8px 0 15px;
+      padding: 12px;
+      border: 1px solid rgba(0, 210, 255, 0.35);
+      border-radius: 14px;
+      background: rgba(0, 210, 255, 0.05);
+      color: #ddd;
+      font-size: 11px;
+      line-height: 1.5;
+    }
+
+    .confirm-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .confirm-actions button {
+      flex: 1;
+      border: 0;
+      border-radius: 20px;
+      padding: 9px 8px;
+      font-family: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .continue-btn {
+      background: #00d2ff;
+      color: #001018;
+    }
+
+    .cancel-btn {
+      background: #20262b;
+      color: #ddd;
     }
   </style>
 </head>
 
 <body>
-  <main class="card">
+  <div class="card">
     <img
       src="https://i.ibb.co/MDfNgVBq/Whats-App-Image-2026-07-28-at-1-43-38-PM-150x150.jpg"
       alt="Trader Gupta"
       class="profile-img"
-      width="112"
-      height="112"
-    >
+    />
 
     <h1>LEARNERS GAUTAM</h1>
 
-    <section class="features" aria-label="Learning topics">
+    <div class="features">
       <div class="feature-item">
         <span class="icon">🌐</span>
-        <span>Learning &amp; Educational Sessions</span>
+        Learning &amp; Educational Sessions
       </div>
 
       <div class="feature-item">
         <span class="icon">📊</span>
-        <span>Market Concepts &amp; Awareness</span>
+        Market Concepts &amp; Awareness
       </div>
 
       <div class="feature-item">
         <span class="icon">💎</span>
-        <span>Chart Reading Concepts</span>
+        Chart Reading Concepts
       </div>
 
       <div class="feature-item">
         <span class="icon">💻</span>
-        <span>Educational Case Discussions</span>
+        Educational Case Discussions
       </div>
-    </section>
+    </div>
 
     <p class="join-text">
       Join our learning community and grow your knowledge
     </p>
 
-    <a
-      href="https://t.me/+RoSTRXTWP3g4MWVl"
+    <button
+      type="button"
+      id="telegramBtn"
       class="telegram-btn"
-      id="telegramJoin"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Join Free Telegram"
+      aria-expanded="false"
     >
       JOIN FREE TELEGRAM
-    </a>
+    </button>
+
+    <div id="confirmBox" class="confirm-box">
+      You are about to continue to our Telegram learning community.
+      <div class="confirm-actions">
+        <button type="button" id="continueBtn" class="continue-btn">
+          Continue
+        </button>
+        <button type="button" id="cancelBtn" class="cancel-btn">
+          Cancel
+        </button>
+      </div>
+    </div>
 
     <p class="hindi-quote">
       नियत अच्छी और मेहनत सच्ची हो, तो कामयाबी जरूर मिलती है।
@@ -220,34 +244,34 @@
 
     <div class="disclaimer">
       Terms | Privacy | Disclaimer
-      <br>
+      <br />
       Trading involves market risk and may result in financial loss.
       This content is for educational purposes only and is not financial advice.
     </div>
-  </main>
+  </div>
 
-  <!-- Meta Pixel: PageView + Telegram button click tracking -->
+  <!-- Meta Pixel: PageView only -->
   <script>
     !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+    {
+      if(f.fbq)return;
+      n=f.fbq=function(){
+        n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+      };
+      if(!f._fbq)f._fbq=n;
+      n.push=n;
+      n.loaded=!0;
+      n.version="2.0";
+      n.queue=[];
+      t=b.createElement(e);
+      t.async=!0;
+      t.src=v;
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s);
+    }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
 
-    fbq('init', '28340405012238785');
-    fbq('track', 'PageView');
-
-    document.getElementById('telegramJoin').addEventListener('click', function () {
-      fbq('track', 'Subscribe', {
-        content_name: 'Free Telegram Community',
-        content_category: 'Telegram',
-        value: 0,
-        currency: 'INR'
-      });
-    });
+    fbq("init", "28340405012238785");
+    fbq("track", "PageView");
   </script>
 
   <noscript>
@@ -257,7 +281,60 @@
       style="display:none"
       src="https://www.facebook.com/tr?id=28340405012238785&ev=PageView&noscript=1"
       alt=""
-    >
+    />
   </noscript>
+
+  <script>
+    (function () {
+      const TELEGRAM_URL = "https://t.me/+RoSTRXTWP3g4MWVl";
+      const telegramBtn = document.getElementById("telegramBtn");
+      const confirmBox = document.getElementById("confirmBox");
+      const continueBtn = document.getElementById("continueBtn");
+      const cancelBtn = document.getElementById("cancelBtn");
+
+      let confirmationShown = false;
+      let trackingSent = false;
+
+      // First click only opens a confirmation step.
+      // This helps reduce accidental/instant clicks being counted.
+      telegramBtn.addEventListener("click", function () {
+        if (confirmationShown) return;
+
+        confirmationShown = true;
+        confirmBox.style.display = "block";
+        telegramBtn.setAttribute("aria-expanded", "true");
+
+        confirmBox.scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+      });
+
+      // Only after the user explicitly confirms do we count the qualified click.
+      continueBtn.addEventListener("click", function () {
+        if (trackingSent) return;
+        trackingSent = true;
+
+        // Custom event: this is NOT a fake "Lead".
+        // It represents an intentional Telegram continuation.
+        if (typeof fbq === "function") {
+          fbq("trackCustom", "TelegramClick", {
+            content_name: "Free Telegram Learning Community"
+          });
+        }
+
+        // Give the browser a moment to send the pixel event before redirecting.
+        setTimeout(function () {
+          window.location.href = TELEGRAM_URL;
+        }, 350);
+      });
+
+      cancelBtn.addEventListener("click", function () {
+        confirmBox.style.display = "none";
+        telegramBtn.setAttribute("aria-expanded", "false");
+        confirmationShown = false;
+      });
+    })();
+  </script>
 </body>
 </html>
